@@ -42,10 +42,10 @@
             this.lblBuscarProducto = new System.Windows.Forms.Label();
             this.lblCantidadVenta = new System.Windows.Forms.Label();
             this.btnVenderProducto = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.lblVenderProducto = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtNombreProducto
@@ -166,16 +166,6 @@
             this.btnVenderProducto.UseVisualStyleBackColor = true;
             this.btnVenderProducto.Click += new System.EventHandler(this.btnVenderProducto_Click);
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(476, 149);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(80, 23);
-            this.btnBuscar.TabIndex = 14;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
             // txtBusqueda
             // 
             this.txtBusqueda.Location = new System.Drawing.Point(536, 86);
@@ -200,15 +190,24 @@
             this.lblResultado.Size = new System.Drawing.Size(0, 16);
             this.lblResultado.TabIndex = 17;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(486, 135);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 18;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(896, 514);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.lblVenderProducto);
             this.Controls.Add(this.txtBusqueda);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnVenderProducto);
             this.Controls.Add(this.lblCantidadVenta);
             this.Controls.Add(this.lblBuscarProducto);
@@ -246,10 +245,10 @@
         private System.Windows.Forms.Label lblBuscarProducto;
         private System.Windows.Forms.Label lblCantidadVenta;
         private System.Windows.Forms.Button btnVenderProducto;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtBusqueda;
         private System.Windows.Forms.Label lblVenderProducto;
         private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }
 

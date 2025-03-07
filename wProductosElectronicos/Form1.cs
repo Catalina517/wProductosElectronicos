@@ -40,9 +40,10 @@ namespace wProductosElectronicos
             }
         }
 
+
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            string nombreProducto = txtBusqueda.Text.Trim(); 
+            string nombreProducto = txtBusqueda.Text.Trim();
 
             if (string.IsNullOrEmpty(nombreProducto))
             {
@@ -62,7 +63,6 @@ namespace wProductosElectronicos
             }
         }
 
-        
         private void btnVenderProducto_Click(object sender, EventArgs e)
         {
             string nombre = txtBuscarProducto.Text.Trim();
@@ -105,6 +105,8 @@ namespace wProductosElectronicos
             txtBuscarProducto.Clear();
             txtCantidadVenta.Clear();
         }
+
+       
     }
 }
 
