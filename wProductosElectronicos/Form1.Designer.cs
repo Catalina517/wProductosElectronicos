@@ -40,7 +40,6 @@
             this.txtCantidadVenta = new System.Windows.Forms.TextBox();
             this.lblBuscarProducto = new System.Windows.Forms.Label();
             this.lblCantidadVenta = new System.Windows.Forms.Label();
-            this.btnVenderProducto = new System.Windows.Forms.Button();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.lblVenderProducto = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
@@ -146,16 +145,6 @@
             this.lblCantidadVenta.TabIndex = 12;
             this.lblCantidadVenta.Text = "Cantidad de venta:";
             // 
-            // btnVenderProducto
-            // 
-            this.btnVenderProducto.Location = new System.Drawing.Point(569, 439);
-            this.btnVenderProducto.Name = "btnVenderProducto";
-            this.btnVenderProducto.Size = new System.Drawing.Size(88, 35);
-            this.btnVenderProducto.TabIndex = 13;
-            this.btnVenderProducto.Text = "Vender";
-            this.btnVenderProducto.UseVisualStyleBackColor = true;
-            this.btnVenderProducto.Click += new System.EventHandler(this.btnVenderProducto_Click);
-            // 
             // txtBusqueda
             // 
             this.txtBusqueda.Location = new System.Drawing.Point(536, 86);
@@ -192,9 +181,9 @@
             // 
             // btnAgregarProducto
             // 
-            this.btnAgregarProducto.Location = new System.Drawing.Point(95, 272);
+            this.btnAgregarProducto.Location = new System.Drawing.Point(95, 257);
             this.btnAgregarProducto.Name = "btnAgregarProducto";
-            this.btnAgregarProducto.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarProducto.Size = new System.Drawing.Size(94, 41);
             this.btnAgregarProducto.TabIndex = 19;
             this.btnAgregarProducto.Text = "Agregar";
             this.btnAgregarProducto.UseVisualStyleBackColor = true;
@@ -210,7 +199,6 @@
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.lblVenderProducto);
             this.Controls.Add(this.txtBusqueda);
-            this.Controls.Add(this.btnVenderProducto);
             this.Controls.Add(this.lblCantidadVenta);
             this.Controls.Add(this.lblBuscarProducto);
             this.Controls.Add(this.txtCantidadVenta);
@@ -244,7 +232,6 @@
         private System.Windows.Forms.TextBox txtCantidadVenta;
         private System.Windows.Forms.Label lblBuscarProducto;
         private System.Windows.Forms.Label lblCantidadVenta;
-        private System.Windows.Forms.Button btnVenderProducto;
         private System.Windows.Forms.TextBox txtBusqueda;
         private System.Windows.Forms.Label lblVenderProducto;
         private System.Windows.Forms.Label lblResultado;
