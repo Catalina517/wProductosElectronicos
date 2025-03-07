@@ -25,21 +25,6 @@ namespace wProductosElectronicos
             ActualizarLista();
         }
 
-        private void btnAgregarProducto_Click(object sender, EventArgs e)
-        {
-            string nombre = txtNombreProducto.Text;
-            if (decimal.TryParse(txtPrecioProducto.Text, out decimal precio) && int.TryParse(txtCantidadStock.Text, out int cantidad))
-            {
-                inventario.AgregarProducto(nombre, precio, cantidad);
-                ActualizarLista();
-                LimpiarCampos();
-            }
-            else
-            {
-                MessageBox.Show("Ingrese valores válidos para precio y cantidad.");
-            }
-        }
-
         private void btnVenderProducto_Click(object sender, EventArgs e)
         {
             string nombre = txtBuscarProducto.Text.Trim();
@@ -102,6 +87,21 @@ namespace wProductosElectronicos
             else
             {
                 lblResultado.Text = "Producto no encontrado.";
+            }
+        }
+
+        private void btnAgregarProducto_Click_1(object sender, EventArgs e)
+        {
+            string nombre = txtNombreProducto.Text;
+            if (decimal.TryParse(txtPrecioProducto.Text, out decimal precio) && int.TryParse(txtCantidadStock.Text, out int cantidad))
+            {
+                inventario.AgregarProducto(nombre, precio, cantidad);
+                ActualizarLista();
+                LimpiarCampos();
+            }
+            else
+            {
+                MessageBox.Show("Ingrese valores válidos para precio y cantidad.");
             }
         }
     }

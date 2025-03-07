@@ -35,7 +35,6 @@
             this.lblPrecioProducto = new System.Windows.Forms.Label();
             this.lblCantidadStock = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.listBoxInventario = new System.Windows.Forms.ListBox();
             this.txtBuscarProducto = new System.Windows.Forms.TextBox();
             this.txtCantidadVenta = new System.Windows.Forms.TextBox();
@@ -46,6 +45,7 @@
             this.lblVenderProducto = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtNombreProducto
@@ -104,16 +104,6 @@
             this.label4.Size = new System.Drawing.Size(289, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Control de Inventario de Productos Electrónicos";
-            // 
-            // btnAgregarProducto
-            // 
-            this.btnAgregarProducto.Location = new System.Drawing.Point(88, 272);
-            this.btnAgregarProducto.Name = "btnAgregarProducto";
-            this.btnAgregarProducto.Size = new System.Drawing.Size(77, 30);
-            this.btnAgregarProducto.TabIndex = 7;
-            this.btnAgregarProducto.Text = "Agregar";
-            this.btnAgregarProducto.UseVisualStyleBackColor = true;
-            this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click);
             // 
             // listBoxInventario
             // 
@@ -200,11 +190,22 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
             // 
+            // btnAgregarProducto
+            // 
+            this.btnAgregarProducto.Location = new System.Drawing.Point(95, 272);
+            this.btnAgregarProducto.Name = "btnAgregarProducto";
+            this.btnAgregarProducto.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarProducto.TabIndex = 19;
+            this.btnAgregarProducto.Text = "Agregar";
+            this.btnAgregarProducto.UseVisualStyleBackColor = true;
+            this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(896, 514);
+            this.Controls.Add(this.btnAgregarProducto);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.lblVenderProducto);
@@ -215,7 +216,6 @@
             this.Controls.Add(this.txtCantidadVenta);
             this.Controls.Add(this.txtBuscarProducto);
             this.Controls.Add(this.listBoxInventario);
-            this.Controls.Add(this.btnAgregarProducto);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblCantidadStock);
             this.Controls.Add(this.lblPrecioProducto);
@@ -239,7 +239,6 @@
         private System.Windows.Forms.Label lblPrecioProducto;
         private System.Windows.Forms.Label lblCantidadStock;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnAgregarProducto;
         private System.Windows.Forms.ListBox listBoxInventario;
         private System.Windows.Forms.TextBox txtBuscarProducto;
         private System.Windows.Forms.TextBox txtCantidadVenta;
@@ -250,6 +249,7 @@
         private System.Windows.Forms.Label lblVenderProducto;
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnAgregarProducto;
     }
 }
 
