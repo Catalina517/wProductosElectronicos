@@ -40,29 +40,6 @@ namespace wProductosElectronicos
             }
         }
 
-
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            string nombreProducto = txtBusqueda.Text.Trim();
-
-            if (string.IsNullOrEmpty(nombreProducto))
-            {
-                lblResultado.Text = "Ingrese un nombre de producto.";
-                return;
-            }
-
-            ProductoElectronico producto = inventario.BuscarProducto(nombreProducto);
-
-            if (producto != null)
-            {
-                lblResultado.Text = $"Stock disponible: {producto.CantidadStock}";
-            }
-            else
-            {
-                lblResultado.Text = "Producto no encontrado.";
-            }
-        }
-
         private void btnVenderProducto_Click(object sender, EventArgs e)
         {
             string nombre = txtBuscarProducto.Text.Trim();
@@ -106,7 +83,27 @@ namespace wProductosElectronicos
             txtCantidadVenta.Clear();
         }
 
-       
+        private void btnBuscar_Click_1(object sender, EventArgs e)
+        {
+            string nombreProducto = txtBusqueda.Text.Trim();
+
+            if (string.IsNullOrEmpty(nombreProducto))
+            {
+                lblResultado.Text = "Ingrese un nombre de producto.";
+                return;
+            }
+
+            ProductoElectronico producto = inventario.BuscarProducto(nombreProducto);
+
+            if (producto != null)
+            {
+                lblResultado.Text = $"Stock disponible: {producto.CantidadStock}";
+            }
+            else
+            {
+                lblResultado.Text = "Producto no encontrado.";
+            }
+        }
     }
 }
 
