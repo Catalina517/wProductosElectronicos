@@ -45,6 +45,7 @@
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnAgregarProducto = new System.Windows.Forms.Button();
+            this.btnVenderProducto = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtNombreProducto
@@ -189,11 +190,22 @@
             this.btnAgregarProducto.UseVisualStyleBackColor = true;
             this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click_1);
             // 
+            // btnVenderProducto
+            // 
+            this.btnVenderProducto.Location = new System.Drawing.Point(561, 426);
+            this.btnVenderProducto.Name = "btnVenderProducto";
+            this.btnVenderProducto.Size = new System.Drawing.Size(75, 23);
+            this.btnVenderProducto.TabIndex = 20;
+            this.btnVenderProducto.Text = "Vender";
+            this.btnVenderProducto.UseVisualStyleBackColor = true;
+            this.btnVenderProducto.Click += new System.EventHandler(this.btnVenderProducto_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(896, 514);
+            this.Controls.Add(this.btnVenderProducto);
             this.Controls.Add(this.btnAgregarProducto);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblResultado);
@@ -237,6 +249,7 @@
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnAgregarProducto;
+        private System.Windows.Forms.Button btnVenderProducto;
     }
 }
 

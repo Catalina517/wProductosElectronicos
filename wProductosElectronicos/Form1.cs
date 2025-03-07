@@ -25,31 +25,6 @@ namespace wProductosElectronicos
             ActualizarLista();
         }
 
-        private void btnVenderProducto_Click(object sender, EventArgs e)
-        {
-            string nombre = txtBuscarProducto.Text.Trim();
-
-            if (string.IsNullOrEmpty(nombre))
-            {
-                MessageBox.Show("Debe ingresar el nombre del producto.");
-                return;
-            }
-
-            if (!int.TryParse(txtCantidadVenta.Text, out int cantidad) || cantidad <= 0)
-            {
-                MessageBox.Show("Ingrese una cantidad válida para vender.");
-                return;
-            }
-
-            if (inventario.VenderProducto(nombre, cantidad))
-            {
-                MessageBox.Show($"Venta realizada: {cantidad} unidad(es) de '{nombre}'.");
-                ActualizarLista();
-            }
-        }
-
-
-
         public void ActualizarLista()
         {
             listBoxInventario.Items.Clear();
@@ -102,6 +77,29 @@ namespace wProductosElectronicos
             else
             {
                 MessageBox.Show("Ingrese valores válidos para precio y cantidad.");
+            }
+        }
+
+        private void btnVenderProducto_Click_1(object sender, EventArgs e)
+        {
+            string nombre = txtBuscarProducto.Text.Trim();
+
+            if (string.IsNullOrEmpty(nombre))
+            {
+                MessageBox.Show("Debe ingresar el nombre del producto.");
+                return;
+            }
+
+            if (!int.TryParse(txtCantidadVenta.Text, out int cantidad) || cantidad <= 0)
+            {
+                MessageBox.Show("Ingrese una cantidad válida para vender.");
+                return;
+            }
+
+            if (inventario.VenderProducto(nombre, cantidad))
+            {
+                MessageBox.Show($"Venta realizada: {cantidad} unidad(es) de '{nombre}'.");
+                ActualizarLista();
             }
         }
     }
